@@ -6,7 +6,6 @@ title = 'Ojas Bhagavath'
 
 # Ojas Bhagavath
 
-This is the webpage of Ojas Bhagavath.  
+This is the website of Ojas Bhagavath.  
 I am a Junior Research Fellow at IIT Gandhinagar.  
-It is under construction.  
-I did a thing.
+This website is currently under construction.  
