@@ -8,4 +8,4 @@ title = 'Ojas Bhagavath'
 
 This is the website of Ojas Bhagavath.  
 I am a Junior Research Fellow at IIT Gandhinagar.  
-This website is currently under construction.  
+This website is currently under construction.
