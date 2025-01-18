@@ -1,3 +1,6 @@
 baseURL = 'https://ojasb.xyz/'
+defaultContentLanguage = "en"
 languageCode = 'en-us'
+pluralizeListTitles = false
+timeZone = "Asia/Kolkata"
 title = "Ojas' Website"
