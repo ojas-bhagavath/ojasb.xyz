@@ -1,0 +1,15 @@
+---
+main:
+    - name: Math
+      pageRef: "/math"
+      weight: 10
+      title: Mathematics
+    - name: Art
+      pageRef: "/art"
+      weight: 20
+    - name: Vitae
+      pageRef: "/vitae"
+      weight: 30
+    - name: Connect
+      pageRef: "/connect"
+      weight: 40

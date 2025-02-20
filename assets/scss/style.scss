@@ -1,0 +1,152 @@
+:root {
+    --base: #fbf1c7;
+    --text: #282828;
+    --red: #cc241d;
+    --blue: #b16286;
+}
+
+.dark-mode {
+    --base: #282828;
+    --text: #fbf1c7;
+    --red: #cc241d;
+    --blue: #b16286;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    @font-face {
+        font-family: "source_serif_4";
+        font-style: normal;
+        font-weight: 400;
+        src: url(/fonts/source_serif_4.ttf) format("ttf");
+    }
+    @font-face {
+        font-family: "dezs";
+        font-style: normal;
+        src: url(/fonts/DSZierschrift.ttf) format("ttf");
+    }
+
+    body {
+        color: var(--text);
+        background-color: var(--base);
+        font-family: "source_serif_4";
+
+        h1 {
+            border-bottom: dotted;
+            border-width: 1px;
+            border-radius: 1px;
+        }
+
+        h1,
+        h2 {
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        header {
+            nav {
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    height: 60px;
+                    margin-top: 0px;
+                    padding: 0px;
+
+                    li {
+                        display: flex;
+                        height: 100%;
+
+                        a {
+                            display: flex;
+                            text-decoration: none;
+                            color: var(--text);
+                        }
+
+                        svg {
+                            display: flex;
+                            fill: var(--text);
+                            object-fit: contain;
+                        }
+                    }
+
+                    .home-li {
+                        margin-right: auto;
+                        padding: 0.5em 2em;
+                        a {
+                            font-family: "dezs";
+                        }
+                    }
+                    .active-page,
+                    .passive-page {
+                        padding-left: 2em;
+                        padding-right: 2em;
+                        align-items: center;
+                        &:hover {
+                            a {
+                                color: var(--blue);
+                            }
+                            border-bottom: var(--blue) solid 2px;
+                        }
+                    }
+
+                    .active-page {
+                        a {
+                            color: var(--red);
+                        }
+                        border-bottom: var(--red) solid 2px;
+                    }
+
+                    .theme-switcher-li {
+                        margin-left: auto;
+                        padding: 1em 2em;
+                    }
+                }
+            }
+        }
+        main {
+            padding-top: 2em;
+            width: calc(min(975px, 90%));
+            margin: auto;
+            font-family: "source_serif_4";
+            font-size: 18px;
+
+            .quotefigure {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                &::before {
+                    content: open-quote;
+                    font-weight: bold;
+                    font-size: 50px;
+                    align-self: start;
+                }
+                &::after {
+                    content: close-quote;
+                    font-weight: bold;
+                    font-size: 50px;
+                    align-self: end;
+                }
+
+                .quotebox {
+                    flex: 1;
+                    .sectionquotes {
+                        font-weight: 400;
+                        font-style: italic;
+                        .quotecite {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
