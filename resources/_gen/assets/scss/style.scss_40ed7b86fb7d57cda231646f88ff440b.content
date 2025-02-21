@@ -17,20 +17,10 @@
 }
 
 @font-face {
-  html {
-    font-family: "source_serif_4";
-    font-style: normal;
-    font-weight: 400;
-    src: url(/fonts/source_serif_4.ttf) format("ttf");
-  }
-}
-
-@font-face {
-  html {
-    font-family: "dezs";
-    font-style: normal;
-    src: url(/fonts/DSZierschrift.ttf) format("ttf");
-  }
+  font-family: "source_serif_4";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/source_serif_4.ttf) format("ttf");
 }
 
 html body {
@@ -85,10 +75,6 @@ html body header nav ul li svg {
 html body header nav ul .home-li {
   margin-right: auto;
   padding: 0.5em 2em;
-}
-
-html body header nav ul .home-li a {
-  font-family: "dezs";
 }
 
 html body header nav ul .active-page,

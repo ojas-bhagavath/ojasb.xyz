@@ -16,19 +16,14 @@
     box-sizing: border-box;
 }
 
-html {
-    @font-face {
-        font-family: "source_serif_4";
-        font-style: normal;
-        font-weight: 400;
-        src: url(/fonts/source_serif_4.ttf) format("ttf");
-    }
-    @font-face {
-        font-family: "dezs";
-        font-style: normal;
-        src: url(/fonts/DSZierschrift.ttf) format("ttf");
-    }
+@font-face {
+    font-family: "source_serif_4";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/source_serif_4.ttf) format("ttf");
+}
 
+html {
     body {
         color: var(--text);
         background-color: var(--base);
@@ -81,9 +76,6 @@ html {
                     .home-li {
                         margin-right: auto;
                         padding: 0.5em 2em;
-                        a {
-                            font-family: "dezs";
-                        }
                     }
                     .active-page,
                     .passive-page {
