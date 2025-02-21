@@ -17,16 +17,25 @@
 }
 
 @font-face {
-  font-family: "source_serif_4";
+  font-family: "Source_Serif_4";
+  src: url("fonts/SourceSerif4/SourceSerif4Roman-Regular.eot");
+  src: url("fonts/SourceSerif4/SourceSerif4Roman-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSerif4/SourceSerif4Roman-Regular.woff2") format("woff2"), url("fonts/SourceSerif4/SourceSerif4Roman-Regular.woff") format("woff"), url("fonts/SourceSerif4/SourceSerif4Roman-Regular.ttf") format("truetype"), url("fonts/SourceSerif4/SourceSerif4Roman-Regular.svg#SourceSerif4Roman-Regular") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/source_serif_4.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Deutsche_Zierschrift";
+  src: url("/fonts/DeutscheZierschrift/DeutscheZierschrift.eot");
+  src: url("/fonts/DeutscheZierschrift/DeutscheZierschrift.eot?#iefix") format("embedded-opentype"), url("/fonts/DeutscheZierschrift/DeutscheZierschrift.woff2") format("woff2"), url("/fonts/DeutscheZierschrift/DeutscheZierschrift.woff") format("woff"), url("/fonts/DeutscheZierschrift/DeutscheZierschrift.ttf") format("truetype"), url("/fonts/DeutscheZierschrift/DeutscheZierschrift.svg#DeutscheZierschrift") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html body {
   color: var(--text);
   background-color: var(--base);
-  font-family: "source_serif_4";
+  font-family: "Source_Serif_4";
 }
 
 html body h1 {
@@ -75,6 +84,11 @@ html body header nav ul li svg {
 html body header nav ul .home-li {
   margin-right: auto;
   padding: 0.5em 2em;
+}
+
+html body header nav ul .home-li a {
+  font-family: "Deutsche_Zierschrift";
+  font-size: 80px;
 }
 
 html body header nav ul .active-page,
