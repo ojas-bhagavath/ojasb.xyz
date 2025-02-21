@@ -73,11 +73,6 @@ html body header nav ul .home-li {
   padding: 0.5em 2em;
 }
 
-html body header nav ul .home-li a {
-  font-family: "DeutscheZierschrift";
-  font-size: 80px;
-}
-
 html body header nav ul .active-page,
 html body header nav ul .passive-page {
   padding-left: 2em;
@@ -112,7 +107,7 @@ html body main {
   padding-top: 2em;
   width: calc(min(975px, 90%));
   margin: auto;
-  font-family: "source_serif_4";
+  font-family: "Source Serif 4";
   font-size: 18px;
 }
 
