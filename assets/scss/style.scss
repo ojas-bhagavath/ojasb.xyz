@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: "Source_Serif_4";
+    font-family: "SourceSerif4";
     src: url("/fonts/SourceSerif4/SourceSerif4Roman-Regular.eot");
     src:
         url("/fonts/SourceSerif4/SourceSerif4Roman-Regular.eot?#iefix")
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-    font-family: "Deutsche_Zierschrift";
+    font-family: "DeutscheZierschrift";
     src: url("/fonts/DeutscheZierschrift/DeutscheZierschrift.eot");
     src:
         url("/fonts/DeutscheZierschrift/DeutscheZierschrift.eot?#iefix")
@@ -55,7 +55,7 @@ html {
     body {
         color: var(--text);
         background-color: var(--base);
-        font-family: "Source_Serif_4";
+        font-family: "SourceSerif4";
 
         h1 {
             border-bottom: dotted;
@@ -106,7 +106,7 @@ html {
                         padding: 0.5em 2em;
 
                         a {
-                            font-family: "Deutsche_Zierschrift";
+                            font-family: "DeutscheZierschrift";
                             font-size: 80px;
                         }
                     }
