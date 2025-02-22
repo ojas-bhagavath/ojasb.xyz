@@ -2,7 +2,16 @@
     <div class="navbox">
         <ul>
             <li class="home-li">
-                <a href="/">o</a>
+                <a href="/">
+                    <img
+                        class="logo-light"
+                        src="/img/icons/logo/logo-light.png"
+                    />
+                    <img
+                        class="logo-dark"
+                        src="/img/icons/logo/logo-dark.png"
+                    />
+                </a>
             </li>
             {{ $page := . }}
             {{ range .Site.Menus.main }}
