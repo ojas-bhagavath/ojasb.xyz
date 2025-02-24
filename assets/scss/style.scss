@@ -1,15 +1,15 @@
 :root {
-    --base-color: #fbf1c7;
-    --secondary-base: #bdae93;
-    --text-color: #282828;
+    --base-color: #282828;
+    --secondary-base: #665c54;
+    --text-color: #fbf1c7;
     --red: #cc241d;
     --accent: #b16286;
 }
 
-.darkmode {
-    --base-color: #282828;
-    --secondary-base: #665c54;
-    --text-color: #fbf1c7;
+.lightmode {
+    --base-color: #fbf1c7;
+    --secondary-base: #bdae93;
+    --text-color: #282828;
     --red: #cc241d;
     --accent: #b16286;
 }
@@ -169,20 +169,6 @@ html {
     }
 }
 
-.darkmode {
-    #theme-switch {
-        svg {
-            &:first-child {
-                display: none;
-                visibility: hidden;
-            }
-            &:last-child {
-                display: block;
-                visibility: visible;
-            }
-        }
-    }
-}
 .home-li {
     img {
         &:first-child {
@@ -195,9 +181,21 @@ html {
         }
     }
 }
-.darkmode {
+.lightmode {
     .home-li {
         img {
+            &:first-child {
+                display: none;
+                visibility: hidden;
+            }
+            &:last-child {
+                display: block;
+                visibility: visible;
+            }
+        }
+    }
+    #theme-switch {
+        svg {
             &:first-child {
                 display: none;
                 visibility: hidden;
