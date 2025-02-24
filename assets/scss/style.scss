@@ -160,7 +160,7 @@ html {
         fill: var(--text-color);
         &:first-child {
             display: block;
-            visibility: unset;
+            visibility: visible;
         }
         &:last-child {
             display: none;
@@ -178,7 +178,7 @@ html {
             }
             &:last-child {
                 display: block;
-                visibility: unset;
+                visibility: visible;
             }
         }
     }
@@ -187,7 +187,7 @@ html {
     img {
         &:first-child {
             display: block;
-            visibility: unset;
+            visibility: visible;
         }
         &:last-child {
             display: none;
@@ -204,7 +204,7 @@ html {
             }
             &:last-child {
                 display: block;
-                visibility: unset;
+                visibility: visible;
             }
         }
     }
