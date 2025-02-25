@@ -35,6 +35,10 @@ html {
                 padding-left: 5vw;
                 padding-right: 5vw;
                 background-color: var(--base-color);
+                position: fixed;
+                z-index: 10;
+                top: 0px;
+                left: 0px;
 
                 ul {
                     list-style: none;
@@ -42,8 +46,7 @@ html {
                     align-items: center;
                     justify-content: center;
                     height: 60px;
-                    margin-top: 0px;
-                    padding: 0px;
+                    margin: 0px;
 
                     li {
                         display: flex;
@@ -62,8 +65,7 @@ html {
                     }
                     .active-page,
                     .passive-page {
-                        padding-left: 2em;
-                        padding-right: 2em;
+                        padding: 0em 2em 0em 2em;
                         display: flex;
                         align-items: center;
                         &:hover {
@@ -90,9 +92,9 @@ html {
             }
         }
         main {
-            padding-top: 1em;
             width: calc(min(975px, 90%));
             margin: auto;
+            margin-top: 100px;
             font-family: "Source Serif 4";
             font-size: 18px;
 
