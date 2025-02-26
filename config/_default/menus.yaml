@@ -7,9 +7,12 @@ main:
     - name: Art
       pageRef: "/art"
       weight: 20
+    - name: Discourse
+      pageRef: "/discourse"
+      weight: 30
     - name: Vitae
       pageRef: "/vitae"
-      weight: 30
+      weight: 40
     - name: Connect
       pageRef: "/connect"
-      weight: 40
+      weight: 50
