@@ -4,8 +4,8 @@ main:
       pageRef: "/math"
       weight: 10
       title: Mathematics
-    - name: Depictions
-      pageRef: "/depictions"
+    - name: Art
+      pageRef: "/art"
       weight: 20
       title: My Sketches
     - name: Discourse
