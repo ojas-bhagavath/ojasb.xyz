@@ -4,15 +4,19 @@ main:
       pageRef: "/math"
       weight: 10
       title: Mathematics
-    - name: Art
-      pageRef: "/art"
+    - name: Depictions
+      pageRef: "/depictions"
       weight: 20
+      title: My Sketches
     - name: Discourse
       pageRef: "/discourse"
       weight: 30
+      title: Articles
     - name: Vitae
       pageRef: "/vitae"
       weight: 40
+      title: Curriculum Vitae
     - name: Connect
       pageRef: "/connect"
       weight: 50
+      title: Contact Me
