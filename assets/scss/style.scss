@@ -134,11 +134,28 @@ html {
                     color: inherit;
                 }
             }
-            .quotefigure {
+            blockquote {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                div {
+                    font-style: italic;
+                    flex: 1;
+                    cite {
+                        float: right;
+                        font-style: normal;
+                        a {
+                            text-decoration: underline;
+                            color: inherit;
+                        }
+                        &::before {
+                            content: "\2014";
+                        }
+                    }
+                }
                 &::before {
+                    margin-right: 2rem;
                     content: open-quote;
                     font-weight: bold;
                     font-size: 50px;
@@ -146,22 +163,12 @@ html {
                     color: var(--secondary-base);
                 }
                 &::after {
+                    margin-left: 2rem;
                     content: close-quote;
                     font-weight: bold;
                     font-size: 50px;
                     align-self: end;
                     color: var(--secondary-base);
-                }
-
-                .quotebox {
-                    flex: 1;
-                    .sectionquotes {
-                        font-weight: 400;
-                        font-style: italic;
-                        .quotecite {
-                            text-align: right;
-                        }
-                    }
                 }
             }
         }

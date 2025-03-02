@@ -1,12 +1,12 @@
-<figure class="quotefigure">
-<div class="quotebox">
-<blockquote class="sectionquotes" >
-    {{ .Text }}
-  {{ with .Attributes.cite }}
-    <figcaption class="quotecite">
-      &mdash; {{ . | safeHTML }}
-    </figcaption>
-  {{ end }}
+<blockquote>
+    <div>
+        {{ .Text }}
+        <cite>
+            {{ with .Attributes }}
+                <a href="{{ .link }}" target="_blank">
+                    {{ .quotee | safeHTML }}
+                </a>
+            {{ end }}
+        </cite>
+    </div>
 </blockquote>
-<div>
-</figure>

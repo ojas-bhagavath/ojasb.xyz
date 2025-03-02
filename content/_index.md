@@ -9,7 +9,7 @@ This is the website of **Ojas Bhagavath**. I am a student researcher in mathemat
 # Personal
 
 > What am I in the eyes of most people?
-{cite="Vincent van Gogh"}
+{quotee="Vincent van Gogh" link="https://en.wikipedia.org/wiki/Vincent_van_Gogh"}
 
 ## Work
 
