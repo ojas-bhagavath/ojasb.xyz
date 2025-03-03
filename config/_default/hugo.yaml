@@ -5,3 +5,6 @@ languageCode: en-us
 pluralizeListTitles: false
 timeZone: Asia/Kolkata
 title: Ojas' Website
+disableKinds:
+    - taxonomy
+    - term
