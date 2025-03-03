@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="{{ .Site.Language.Lang }}">
     <head>
-        {{ partial "head.html" . }}
+        {{ partial "head/meta.html" . }}
+        {{ partial "head/styles.html" . }}
+        {{ partial "head/scripts.html" . }}
+        {{ partial "head/favicon.html" . }}
+        {{ partial "head/fonts.html" . }}
+        {{ partial "head/title.html" . }}
     </head>
 
-    <body class="">
+    <body>
         <header>{{ partial "nav.html" . }}</header>
         <main>
             {{ block "main" . }}

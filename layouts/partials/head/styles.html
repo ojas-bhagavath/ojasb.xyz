@@ -1,0 +1,10 @@
+{{ with resources.Get "scss/style.scss" }}
+    {{ $opts := dict
+        "enableSourceMap" "true"
+        "outputStyle" "expanded"
+        "targetPath" "css/style.css"
+    }}
+    {{ with . | css.Sass $opts | resources.Minify | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ .Permalink }}" />
+    {{ end }}
+{{ end }}

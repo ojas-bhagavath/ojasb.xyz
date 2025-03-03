@@ -1,0 +1,5 @@
+{{ with resources.Get "js/lightmode.js" }}
+    {{ with resources.Copy "js/lightmode.js" . }}
+        <script type="text/javascript" src="{{ .Permalink }}" defer></script>
+    {{ end }}
+{{ end }}
