@@ -1,0 +1,41 @@
+<section class="container">
+    <div class="contact">
+        <h3>Got something to say? I'm all ears:</h3>
+        <div class="contact-buttons">
+            {{ range .Site.Menus.contact }}
+                <div
+                    style="--logo-color:{{ .Params.color }}"
+                    title="{{ .Title }}"
+                >
+                    <a target="_blank" href="{{ .URL }}">
+                        {{ partialCached (print .Pre) . }}
+                    </a>
+                    <span>{{ .Params.username }}</span>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="connect">
+        <h3>Curious about what I'm up to? Find me here:</h3>
+        <div class="connect-buttons">
+            {{ range .Site.Menus.connect }}
+                <div
+                    style="--logo-color:{{ .Params.color }}"
+                    title="{{ .Title }}"
+                >
+                    <a target="_blank" href="{{ .URL }}">
+                        {{ partialCached (print .Pre) . }}
+                    </a>
+                    <span>{{ .Params.username }}</span>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<section class="copyright">
+    Powered by
+    <a target="_blank" href="https://gohugo.io"
+        >{{ partialCached "logos/hugo.svg" . }}</a
+    >
+    &copy; {{ .Site.Params.author }}, {{ now.Format "2006" }}.
+</section>

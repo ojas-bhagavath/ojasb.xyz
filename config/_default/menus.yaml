@@ -16,7 +16,77 @@ main:
       pageRef: "/vitae"
       weight: 40
       title: Curriculum Vitae
-    - name: Connect
-      pageRef: "/connect"
+contact:
+    - name: "email"
+      title: "Email"
+      url: "mailto:hi@ojasb.xyz"
+      pre: "logos/gmail.svg"
+      params:
+          - username: "hi@ojasb.xyz"
+          - color: "#EA4335"
+      weight: 10
+    - name: "telegram"
+      title: "Telegram"
+      url: "https://t.me/ojasbhagavath"
+      pre: "logos/telegram.svg"
+      params:
+          - username: "@ojasbhagavath"
+          - color: "#26A5E4"
+      weight: 20
+    - name: "discord"
+      title: "Discord"
+      url: "https://discord.com/users/757208743988428901"
+      pre: "logos/discord.svg"
+      params:
+          - username: "Ojas#4523"
+          - color: "#5865F2"
+      weight: 30
+connect:
+    - name: "github"
+      title: "GitHub"
+      url: "https://github.com/ojas-bhagavath"
+      pre: "logos/github.svg"
+      params:
+          - username: "ojas-bhagavath"
+          - color: "#181717"
+      weight: 10
+    - name: "linkedin"
+      title: "LinkedIn"
+      url: "https://www.linkedin.com/in/ojas-bhagavath/"
+      pre: "logos/linkedin.svg"
+      params:
+          - username: "ojas-bhagavath"
+          - color: "#0A66C2"
+      weight: 20
+    - name: "stackexchange"
+      title: "Math Stack Exchange"
+      url: "https://math.stackexchange.com/users/774120/ojas-bhagavath"
+      pre: "logos/stackexchange.svg"
+      params:
+          - username: "ojas-bhagavath"
+          - color: "#1E5397"
+      weight: 30
+    - name: "researchgate"
+      title: "ResearchGate"
+      url: "https://www.researchgate.net/profile/Ojas-Bhagavath"
+      pre: "logos/researchgate.svg"
+      params:
+          - username: "Ojas-Bhagavath"
+          - color: "#00CCBB"
+      weight: 40
+    - name: "monkeytype"
+      title: "monkeytype"
+      url: "https://monkeytype.com/profile/ojas-bhagavath"
+      pre: "logos/monkeytype.svg"
+      params:
+          - username: "ojas-bhagavath"
+          - color: "#E2B714"
       weight: 50
-      title: Contact Me
+    - name: "pinterest"
+      title: "Pinterest"
+      url: "https://pin.it/4i6Q7SAod"
+      pre: "logos/pinterest.svg"
+      params:
+          - username: "obhagavath"
+          - color: "#BD081C"
+      weight: 60
