@@ -2,19 +2,19 @@
 main:
     - name: Math
       pageRef: "/math"
-      weight: 10
+      weight: 1
       title: Mathematics
     - name: Art
       pageRef: "/art"
-      weight: 20
+      weight: 2
       title: My Sketches
     - name: Discourse
       pageRef: "/discourse"
-      weight: 30
+      weight: 3
       title: Articles
     - name: Vitae
       pageRef: "/vitae"
-      weight: 40
+      weight: 4
       title: Curriculum Vitae
 contact:
     - name: "email"
@@ -24,7 +24,7 @@ contact:
       params:
           - username: "hi@ojasb.xyz"
           - color: "#EA4335"
-      weight: 10
+      weight: 1
     - name: "telegram"
       title: "Telegram"
       url: "https://t.me/ojasbhagavath"
@@ -32,7 +32,7 @@ contact:
       params:
           - username: "@ojasbhagavath"
           - color: "#26A5E4"
-      weight: 20
+      weight: 2
     - name: "discord"
       title: "Discord"
       url: "https://discord.com/users/757208743988428901"
@@ -40,7 +40,7 @@ contact:
       params:
           - username: "Ojas#4523"
           - color: "#5865F2"
-      weight: 30
+      weight: 3
 connect:
     - name: "github"
       title: "GitHub"
@@ -49,7 +49,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#181717"
-      weight: 10
+      weight: 1
     - name: "linkedin"
       title: "LinkedIn"
       url: "https://www.linkedin.com/in/ojas-bhagavath/"
@@ -57,7 +57,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#0A66C2"
-      weight: 20
+      weight: 2
     - name: "stackexchange"
       title: "Math Stack Exchange"
       url: "https://math.stackexchange.com/users/774120/ojas-bhagavath"
@@ -65,7 +65,23 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#1E5397"
-      weight: 30
+      weight: 3
+    # - name: "leetcode"
+    #   title: "LeetCode"
+    #   url: "https://leetcode.com/u/ojas-bhagavath/"
+    #   pre: "logos/leetcode.svg"
+    #   params:
+    #       - username: "ojas-bhagavath"
+    #       - color: "#FFA116"
+    #   weight: 4
+    # - name: "codeforces"
+    #   title: "CodeForces"
+    #   url: "https://codeforces.com/profile/ojasgb"
+    #   pre: "logos/codeforces.svg"
+    #   params:
+    #       - username: "ojasgb"
+    #       - color: "#1F8ACB"
+    #   weight: 5
     - name: "researchgate"
       title: "ResearchGate"
       url: "https://www.researchgate.net/profile/Ojas-Bhagavath"
@@ -73,7 +89,7 @@ connect:
       params:
           - username: "Ojas-Bhagavath"
           - color: "#00CCBB"
-      weight: 40
+      weight: 6
     - name: "monkeytype"
       title: "monkeytype"
       url: "https://monkeytype.com/profile/ojas-bhagavath"
@@ -81,7 +97,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#E2B714"
-      weight: 50
+      weight: 7
     - name: "pinterest"
       title: "Pinterest"
       url: "https://pin.it/4i6Q7SAod"
@@ -89,4 +105,4 @@ connect:
       params:
           - username: "obhagavath"
           - color: "#BD081C"
-      weight: 60
+      weight: 8
