@@ -196,40 +196,63 @@ html {
                         gap: 20px;
                         div {
                             display: flex;
-                            place-items: center;
-                            background-color: var(--text-color);
-                            height: 48px;
-                            padding: 8px;
-                            border-radius: 24px;
+                            flex-direction: column;
+                            align-items: center;
+                            position: relative;
+                            span {
+                                font-size: 0px;
+                                padding: 0;
+                                height: 42px;
+                                line-height: 42px;
+                                user-select: text;
+                                color: white;
+                                white-space: nowrap;
+                                background-color: var(--logo-color);
+                                position: absolute;
+                                cursor: text;
+                                opacity: 0;
+                                border-radius: 50vh;
+                                transition: 0.3s
+                                    cubic-bezier(0.42, 0, 0.44, 1.68);
+                            }
                             a {
-                                text-decoration: none;
-                                flex-shrink: 0;
-                                height: 48px;
                                 display: flex;
                                 place-items: center;
+                                justify-content: center;
+                                background-color: var(--text-color);
+                                flex-shrink: 0;
+                                height: 48px;
+                                width: 48px;
+                                border-radius: 24px;
                                 svg {
                                     height: 32px;
                                     fill: var(--primary-base);
                                 }
                             }
-                            span {
-                                color: white;
-                                padding: 0px;
-                                font-size: 0px;
-                                transition: 0.3s
-                                    cubic-bezier(0.42, 0, 0.44, 1.68);
-                                z-index: 1;
-                            }
-                            &:hover {
-                                background-color: var(--logo-color);
-                                svg {
-                                    fill: white;
-                                }
+
+                            &:has(> a:hover),
+                            &:has(> span:hover) {
                                 span {
-                                    padding: 8px;
-                                    font-size: 18px;
                                     transition: 0.3s
                                         cubic-bezier(0.42, 0, 0.44, 1.68);
+                                    font-size: 16px;
+                                    padding: 0 8px 0 8px;
+                                    opacity: 100%;
+                                    transform: translateY(-50px);
+                                }
+                                a {
+                                    background-color: var(--logo-color);
+                                    svg {
+                                        fill: white;
+                                    }
+                                    &::before {
+                                        content: "";
+                                        opacity: 0;
+                                        height: 32px;
+                                        width: 48px;
+                                        position: absolute;
+                                        top: -8px;
+                                    }
                                 }
                             }
                         }
@@ -245,40 +268,63 @@ html {
                         gap: 20px;
                         div {
                             display: flex;
-                            place-items: center;
-                            background-color: var(--text-color);
-                            height: 48px;
-                            padding: 8px;
-                            border-radius: 24px;
+                            flex-direction: column;
+                            align-items: center;
+                            position: relative;
+                            span {
+                                font-size: 0px;
+                                padding: 0;
+                                height: 42px;
+                                line-height: 42px;
+                                user-select: text;
+                                white-space: nowrap;
+                                color: white;
+                                background-color: var(--logo-color);
+                                position: absolute;
+                                cursor: text;
+                                opacity: 0;
+                                border-radius: 50vh;
+                                transition: 0.3s
+                                    cubic-bezier(0.42, 0, 0.44, 1.68);
+                            }
                             a {
-                                text-decoration: none;
-                                flex-shrink: 0;
-                                height: 48px;
                                 display: flex;
                                 place-items: center;
+                                justify-content: center;
+                                background-color: var(--text-color);
+                                flex-shrink: 0;
+                                height: 48px;
+                                width: 48px;
+                                border-radius: 24px;
                                 svg {
                                     height: 32px;
                                     fill: var(--primary-base);
                                 }
                             }
-                            span {
-                                color: white;
-                                padding: 0px;
-                                font-size: 0px;
-                                transition: 0.3s
-                                    cubic-bezier(0.42, 0, 0.44, 1.68);
-                                z-index: 1;
-                            }
-                            &:hover {
-                                background-color: var(--logo-color);
-                                svg {
-                                    fill: white;
-                                }
+
+                            &:has(> a:hover),
+                            &:has(> span:hover) {
                                 span {
-                                    padding: 8px;
-                                    font-size: 18px;
                                     transition: 0.3s
                                         cubic-bezier(0.42, 0, 0.44, 1.68);
+                                    font-size: 16px;
+                                    padding: 0 8px 0 8px;
+                                    opacity: 100%;
+                                    transform: translateY(-50px);
+                                }
+                                a {
+                                    background-color: var(--logo-color);
+                                    svg {
+                                        fill: white;
+                                    }
+                                    &::before {
+                                        content: "";
+                                        opacity: 0;
+                                        height: 32px;
+                                        width: 48px;
+                                        position: absolute;
+                                        top: -8px;
+                                    }
                                 }
                             }
                         }
