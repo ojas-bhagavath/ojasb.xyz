@@ -82,7 +82,6 @@ html {
                                 fill: var(--text-color);
                             }
                         }
-                        .active-page,
                         .inactive-page {
                             padding: 0 2em 0 2em;
                             border-radius: 5px;
@@ -94,6 +93,12 @@ html {
                         .active-page {
                             color: var(--primary-base);
                             background-color: var(--secondary-accent);
+                            padding: 0 2em 0 2em;
+                            border-radius: 5px;
+                            &:hover {
+                                color: var(--primary-base);
+                                background-color: var(--primary-accent);
+                            }
                         }
                         #theme-switch {
                             background-color: var(--primary-base);
@@ -364,30 +369,25 @@ html {
             }
         }
     }
-}
-
-.lightmode {
-    --primary-base: #eff1f5;
-    --secondary-base: #acb0be;
-    --text-color: #4c4f69;
-    --primary-accent: #7287f7;
-    --secondary-accent: #d20f39;
-    html {
-        body {
-            header {
-                nav {
-                    .navbox {
-                        .links-container {
-                            #theme-switch {
-                                svg {
-                                    &:first-child {
-                                        display: none;
-                                        visibility: hidden;
-                                    }
-                                    &:last-child {
-                                        display: block;
-                                        visibility: visible;
-                                    }
+    .lightmode {
+        --primary-base: #eff1f5;
+        --secondary-base: #acb0be;
+        --text-color: #4c4f69;
+        --primary-accent: #7287f7;
+        --secondary-accent: #d20f39;
+        header {
+            nav {
+                .navbox {
+                    .links-container {
+                        #theme-switch {
+                            svg {
+                                &:first-child {
+                                    display: none;
+                                    visibility: hidden;
+                                }
+                                &:last-child {
+                                    display: block;
+                                    visibility: visible;
                                 }
                             }
                         }
@@ -404,30 +404,29 @@ html {
             header {
                 nav {
                     .navbox {
-                        #sidebar-active:checked ~ .links-container {
-                            right: 0;
-                        }
-                        #sidebar-active:checked ~ #overlay {
-                            background-color: var(--primary-base);
-                            opacity: 0.9;
-                            height: 100%;
-                            width: 100%;
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            z-index: 9;
+                        #sidebar-active {
+                            &:checked ~ .links-container {
+                                right: 0;
+                            }
+                            &:checked ~ #overlay {
+                                background-color: var(--primary-base);
+                                opacity: 0.9;
+                                height: 100%;
+                                width: 100%;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                z-index: 9;
+                                cursor: pointer;
+                            }
                         }
                         .open-sidebar-button {
                             display: block;
+                            cursor: pointer;
                         }
                         .links-container {
-                            .close-sidebar-button {
-                                display: block;
-                                margin: 20px 30px;
-                            }
                             flex-direction: column;
                             align-items: flex-start;
-
                             position: fixed;
                             top: 0;
                             right: -100%;
@@ -436,15 +435,26 @@ html {
                             height: 100%;
                             background-color: var(--primary-base);
                             transition: 0.3s ease;
-                            a {
+                            .close-sidebar-button {
+                                display: block;
+                                margin: 20px 30px;
+                                cursor: pointer;
+                            }
+                            .active-page {
                                 box-sizing: border-box;
                                 height: auto;
                                 width: 100%;
-                                padding: 20px 30px;
+                                padding: 10px 30px;
+                            }
+                            .inactive-page {
+                                box-sizing: border-box;
+                                height: auto;
+                                width: 100%;
+                                padding: 10px 30px;
                             }
                             #theme-switch {
                                 justify-content: flex-start;
-                                padding: 20px 30px;
+                                padding: 10px 30px;
                                 box-sizing: border-box;
                                 height: auto;
                                 width: 100%;
