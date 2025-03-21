@@ -5,14 +5,11 @@
     --primary-accent: #89b4fa;
     --secondary-accent: #f38ba8;
 }
-
 * {
     box-sizing: border-box;
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
-
 html {
     body {
         color: var(--text-color);
@@ -26,7 +23,6 @@ html {
         flex-direction: column;
         min-height: 100vh;
         min-height: 100dvh;
-
         header {
             nav {
                 height: 65px;
@@ -140,17 +136,14 @@ html {
             margin-top: 100px;
             font-size: 18px;
             flex-grow: 1;
-
             a {
                 color: var(--secondary-accent);
             }
-
             h1 {
                 border-bottom: dotted;
                 border-width: 1px;
                 border-radius: 1px;
             }
-
             h1,
             h2 {
                 a {
@@ -247,7 +240,6 @@ html {
                                     fill: var(--primary-base);
                                 }
                             }
-
                             &:has(> a:hover),
                             &:has(> span:hover) {
                                 span {
@@ -319,7 +311,6 @@ html {
                                     fill: var(--primary-base);
                                 }
                             }
-
                             &:has(> a:hover),
                             &:has(> span:hover) {
                                 span {
@@ -397,7 +388,6 @@ html {
         }
     }
 }
-
 @media screen and (max-width: 784px) {
     html {
         body {
@@ -416,7 +406,7 @@ html {
                                 position: fixed;
                                 top: 0;
                                 left: 0;
-                                z-index: 9;
+                                z-index: 99;
                                 cursor: pointer;
                             }
                         }
@@ -430,9 +420,9 @@ html {
                             position: fixed;
                             top: 0;
                             right: -100%;
-                            z-index: 10;
+                            z-index: 100;
                             width: 300px;
-                            height: 100%;
+                            height: 100vh;
                             background-color: var(--primary-base);
                             transition: 0.3s ease;
                             .close-sidebar-button {
