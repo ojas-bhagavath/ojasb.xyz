@@ -30,6 +30,7 @@ html {
                 display: flex;
                 background-color: var(--primary-base);
                 position: fixed;
+                padding: 10px 0 0 0;
                 top: 0;
                 left: 0;
                 .navbox {
@@ -402,8 +403,8 @@ html {
                             &:checked ~ #overlay {
                                 background-color: var(--primary-base);
                                 opacity: 0.9;
-                                height: 100%;
-                                width: 100%;
+                                height: 100vh;
+                                width: 100vw;
                                 position: fixed;
                                 top: 0;
                                 left: 0;
