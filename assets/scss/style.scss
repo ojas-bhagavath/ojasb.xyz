@@ -393,6 +393,7 @@ html {
         body {
             header {
                 nav {
+                    z-index: 10;
                     .navbox {
                         #sidebar-active {
                             &:checked ~ .links-container {
@@ -406,7 +407,7 @@ html {
                                 position: fixed;
                                 top: 0;
                                 left: 0;
-                                z-index: 99;
+                                z-index: 20;
                                 cursor: pointer;
                             }
                         }
@@ -420,7 +421,7 @@ html {
                             position: fixed;
                             top: 0;
                             right: -100%;
-                            z-index: 100;
+                            z-index: 30;
                             width: 300px;
                             height: 100vh;
                             background-color: var(--primary-base);
