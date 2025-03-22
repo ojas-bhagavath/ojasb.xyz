@@ -38,8 +38,11 @@
 </section>
 <section class="copyright">
     Built with
-    <a target="_blank" href="https://gohugo.io"
-        >{{ partialCached "logos/hugo.svg" . }}</a
-    >
-    &copy; {{ .Site.Params.author }}, {{ now.Format "2006" }}.
+    <a class="hugo" target="_blank" href="https://gohugo.io/">
+        {{ partialCached "logos/hugo.svg" . }}
+    </a>
+    <a class="license" target="_blank" href="/LICENSE">
+        <span>&copy;</span> {{ now.Format "2006" }}
+        {{ partialCached "logos/ojasb.svg" . }}
+    </a>
 </section>

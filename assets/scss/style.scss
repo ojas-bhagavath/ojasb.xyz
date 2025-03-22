@@ -343,12 +343,13 @@ html {
             }
             .copyright {
                 padding: 5px 0;
+                font-size: 16px;
                 text-align: center;
                 border-top: 1px dotted var(--secondary-accent);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                a {
+                .hugo {
                     display: flex;
                     place-items: center;
                     svg {
@@ -357,6 +358,23 @@ html {
                         padding: 0 0 0 5px;
                     }
                     margin-right: auto;
+                }
+                .license {
+                    display: flex;
+                    place-items: center;
+                    text-decoration: none;
+                    color: inherit;
+                    span {
+                        transform: rotate(180deg);
+                        padding: 0 0 0 5px;
+                    }
+                    svg {
+                        height: 18px;
+                        width: 20px;
+                        fill: var(--text-color);
+                        margin: 0;
+                        padding: 0 0 0 5px;
+                    }
                 }
             }
         }
