@@ -12,48 +12,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 html {
     body {
-        color: var(--text-color);
-        background-color: var(--primary-base);
-        font-family: "Source Serif 4";
-        font-size: 18px;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
         display: flex;
         flex-direction: column;
+        background-color: var(--primary-base);
         min-height: 100vh;
         min-height: 100dvh;
+        color: var(--text-color);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        font-family: "Source Serif 4";
+        font-optical-sizing: auto;
         header {
             nav {
-                height: 65px;
-                width: 100%;
                 display: flex;
-                background-color: var(--primary-base);
                 position: fixed;
-                padding: 10px 0 0 0;
                 top: 0;
                 left: 0;
+                background-color: var(--primary-base);
+                padding: 10px 0 0 0;
+                width: 100%;
+                height: 65px;
                 .navbox {
-                    width: 100%;
-                    height: 100%;
                     display: flex;
                     align-items: center;
                     padding: 0 5vw 0 5vw;
+                    width: 100%;
+                    height: 100%;
                     a {
-                        height: 44px;
                         display: flex;
                         align-items: center;
-                        text-decoration: none;
+                        height: 44px;
                         color: inherit;
+                        text-decoration: none;
                     }
                     .home-link {
                         margin: 0 auto 0 0;
                         .logobox {
-                            height: 50px;
                             width: 50px;
+                            height: 50px;
                             svg {
-                                height: 100%;
                                 width: 100%;
+                                height: 100%;
                                 path {
                                     fill: var(--text-color);
                                 }
@@ -80,33 +80,33 @@ html {
                             }
                         }
                         .inactive-page {
-                            padding: 0 2em 0 2em;
                             border-radius: 5px;
+                            padding: 0 2em 0 2em;
                             &:hover {
-                                color: var(--primary-base);
                                 background-color: var(--primary-accent);
+                                color: var(--primary-base);
                             }
                         }
                         .active-page {
-                            color: var(--primary-base);
+                            border-radius: 5px;
                             background-color: var(--secondary-accent);
                             padding: 0 2em 0 2em;
-                            border-radius: 5px;
+                            color: var(--primary-base);
                             &:hover {
-                                color: var(--primary-base);
                                 background-color: var(--primary-accent);
+                                color: var(--primary-base);
                             }
                         }
                         #theme-switch {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            border-width: 0px;
+                            border-radius: 5px;
                             background-color: var(--primary-base);
                             width: 44px;
                             height: 44px;
-                            display: flex;
-                            justify-content: center;
-                            border-width: 0px;
-                            border-radius: 5px;
-                            align-items: center;
-                            cursor: pointer;
                             svg {
                                 width: 24px;
                                 height: 24px;
@@ -132,11 +132,11 @@ html {
             }
         }
         main {
-            width: calc(min(975px, 90%));
+            flex-grow: 1;
             margin: auto;
             margin-top: 100px;
+            width: calc(min(975px, 90%));
             font-size: 18px;
-            flex-grow: 1;
             a {
                 color: var(--secondary-accent);
             }
@@ -148,24 +148,24 @@ html {
             h1,
             h2 {
                 a {
-                    text-decoration: none;
                     color: inherit;
+                    text-decoration: none;
                 }
             }
             blockquote {
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
                 margin: 0;
                 div {
-                    font-style: italic;
                     flex: 1;
+                    font-style: italic;
                     cite {
                         float: right;
                         font-style: normal;
                         a {
-                            text-decoration: underline;
                             color: inherit;
+                            text-decoration: underline;
                         }
                         &::before {
                             content: "\2014";
@@ -173,20 +173,20 @@ html {
                     }
                 }
                 &::before {
+                    align-self: start;
                     margin-right: 2rem;
                     content: open-quote;
+                    color: var(--secondary-base);
                     font-weight: bold;
                     font-size: 50px;
-                    align-self: start;
-                    color: var(--secondary-base);
                 }
                 &::after {
+                    align-self: end;
                     margin-left: 2rem;
                     content: close-quote;
+                    color: var(--secondary-base);
                     font-weight: bold;
                     font-size: 50px;
-                    align-self: end;
-                    color: var(--secondary-base);
                 }
             }
         }
@@ -195,9 +195,9 @@ html {
             flex-direction: column;
             width: 100%;
             .container {
-                padding: 0 20px 30px 20px;
                 display: flex;
                 border-top: 1px dotted var(--secondary-accent);
+                padding: 0 20px 30px 20px;
                 .contact {
                     flex-grow: 1;
                     flex-basis: 100%;
@@ -208,34 +208,34 @@ html {
                         gap: 20px;
                         div {
                             display: flex;
+                            position: relative;
                             flex-direction: column;
                             align-items: center;
-                            position: relative;
                             span {
-                                font-size: 0px;
-                                padding: 0;
-                                height: 42px;
-                                line-height: 42px;
-                                user-select: text;
-                                color: white;
-                                white-space: nowrap;
-                                background-color: var(--logo-color);
                                 position: absolute;
-                                cursor: text;
                                 opacity: 0;
-                                border-radius: 50vh;
                                 transition: 0.3s
                                     cubic-bezier(0.42, 0, 0.44, 1.68);
+                                cursor: text;
+                                border-radius: 50vh;
+                                background-color: var(--logo-color);
+                                padding: 0;
+                                height: 42px;
+                                color: white;
+                                font-size: 0px;
+                                line-height: 42px;
+                                user-select: text;
+                                white-space: nowrap;
                             }
                             a {
                                 display: flex;
-                                place-items: center;
-                                justify-content: center;
-                                background-color: var(--text-color);
                                 flex-shrink: 0;
-                                height: 48px;
-                                width: 48px;
+                                justify-content: center;
+                                place-items: center;
                                 border-radius: 24px;
+                                background-color: var(--text-color);
+                                width: 48px;
+                                height: 48px;
                                 svg {
                                     height: 32px;
                                     fill: var(--primary-base);
@@ -244,12 +244,12 @@ html {
                             &:has(> a:hover),
                             &:has(> span:hover) {
                                 span {
+                                    transform: translateY(-50px);
+                                    opacity: 100%;
                                     transition: 0.3s
                                         cubic-bezier(0.42, 0, 0.44, 1.68);
-                                    font-size: 16px;
                                     padding: 0 8px 0 8px;
-                                    opacity: 100%;
-                                    transform: translateY(-50px);
+                                    font-size: 16px;
                                 }
                                 a {
                                     background-color: var(--logo-color);
@@ -257,12 +257,12 @@ html {
                                         fill: white;
                                     }
                                     &::before {
-                                        content: "";
-                                        opacity: 0;
-                                        height: 32px;
-                                        width: 48px;
                                         position: absolute;
                                         top: -8px;
+                                        opacity: 0;
+                                        width: 48px;
+                                        height: 32px;
+                                        content: "";
                                     }
                                 }
                             }
@@ -279,34 +279,34 @@ html {
                         gap: 20px;
                         div {
                             display: flex;
+                            position: relative;
                             flex-direction: column;
                             align-items: center;
-                            position: relative;
                             span {
-                                font-size: 0px;
+                                position: absolute;
+                                opacity: 0;
+                                transition: 0.3s
+                                    cubic-bezier(0.42, 0, 0.44, 1.68);
+                                cursor: text;
+                                border-radius: 50vh;
+                                background-color: var(--logo-color);
                                 padding: 0;
                                 height: 42px;
+                                color: white;
+                                font-size: 0px;
                                 line-height: 42px;
                                 user-select: text;
                                 white-space: nowrap;
-                                color: white;
-                                background-color: var(--logo-color);
-                                position: absolute;
-                                cursor: text;
-                                opacity: 0;
-                                border-radius: 50vh;
-                                transition: 0.3s
-                                    cubic-bezier(0.42, 0, 0.44, 1.68);
                             }
                             a {
                                 display: flex;
-                                place-items: center;
-                                justify-content: center;
-                                background-color: var(--text-color);
                                 flex-shrink: 0;
-                                height: 48px;
-                                width: 48px;
+                                justify-content: center;
+                                place-items: center;
                                 border-radius: 24px;
+                                background-color: var(--text-color);
+                                width: 48px;
+                                height: 48px;
                                 svg {
                                     height: 32px;
                                     fill: var(--primary-base);
@@ -315,12 +315,12 @@ html {
                             &:has(> a:hover),
                             &:has(> span:hover) {
                                 span {
+                                    transform: translateY(-50px);
+                                    opacity: 100%;
                                     transition: 0.3s
                                         cubic-bezier(0.42, 0, 0.44, 1.68);
-                                    font-size: 16px;
                                     padding: 0 8px 0 8px;
-                                    opacity: 100%;
-                                    transform: translateY(-50px);
+                                    font-size: 16px;
                                 }
                                 a {
                                     background-color: var(--logo-color);
@@ -328,12 +328,12 @@ html {
                                         fill: white;
                                     }
                                     &::before {
-                                        content: "";
-                                        opacity: 0;
-                                        height: 32px;
-                                        width: 48px;
                                         position: absolute;
                                         top: -8px;
+                                        opacity: 0;
+                                        width: 48px;
+                                        height: 32px;
+                                        content: "";
                                     }
                                 }
                             }
@@ -342,35 +342,35 @@ html {
                 }
             }
             .copyright {
-                padding: 5px 0;
-                font-size: 16px;
-                text-align: center;
-                border-top: 1px dotted var(--secondary-accent);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-top: 1px dotted var(--secondary-accent);
+                padding: 5px 0;
+                font-size: 16px;
+                text-align: center;
                 .hugo {
                     display: flex;
                     place-items: center;
+                    margin-right: auto;
                     svg {
                         height: 18px;
                         fill: #ff4088;
                         padding: 0 0 0 5px;
                     }
-                    margin-right: auto;
                 }
                 .license {
                     display: flex;
                     place-items: center;
-                    text-decoration: none;
                     color: inherit;
+                    text-decoration: none;
                     span {
                         transform: rotate(180deg);
                         padding: 0 0 0 5px;
                     }
                     svg {
-                        height: 18px;
                         width: 20px;
+                        height: 18px;
                         fill: var(--text-color);
                         margin: 0;
                         padding: 0 0 0 5px;
@@ -419,15 +419,15 @@ html {
                                 right: 0;
                             }
                             &:checked ~ #overlay {
-                                background-color: var(--primary-base);
-                                opacity: 0.9;
-                                height: 100vh;
-                                width: 100vw;
                                 position: fixed;
                                 top: 0;
                                 left: 0;
+                                opacity: 0.9;
                                 z-index: 20;
                                 cursor: pointer;
+                                background-color: var(--primary-base);
+                                width: 100vw;
+                                height: 100vh;
                             }
                         }
                         .open-sidebar-button {
@@ -435,40 +435,40 @@ html {
                             cursor: pointer;
                         }
                         .links-container {
-                            flex-direction: column;
-                            align-items: flex-start;
                             position: fixed;
                             top: 0;
                             right: -100%;
+                            flex-direction: column;
+                            align-items: flex-start;
                             z-index: 30;
+                            transition: 0.3s ease;
+                            background-color: var(--primary-base);
                             width: 300px;
                             height: 100vh;
-                            background-color: var(--primary-base);
-                            transition: 0.3s ease;
                             .close-sidebar-button {
                                 display: block;
-                                margin: 20px 30px;
                                 cursor: pointer;
+                                margin: 20px 30px;
                             }
                             .active-page {
                                 box-sizing: border-box;
-                                height: auto;
-                                width: 100%;
                                 padding: 10px 30px;
+                                width: 100%;
+                                height: auto;
                             }
                             .inactive-page {
                                 box-sizing: border-box;
-                                height: auto;
-                                width: 100%;
                                 padding: 10px 30px;
+                                width: 100%;
+                                height: auto;
                             }
                             #theme-switch {
                                 justify-content: flex-start;
-                                padding: 10px 30px;
                                 box-sizing: border-box;
-                                height: auto;
-                                width: 100%;
                                 background-color: var(--primary-base);
+                                padding: 10px 30px;
+                                width: 100%;
+                                height: auto;
                             }
                         }
                     }
