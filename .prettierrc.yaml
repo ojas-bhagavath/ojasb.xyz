@@ -1,6 +1,7 @@
 ---
 plugins:
     - prettier-plugin-go-template
+    - prettier-plugin-css-order
 overrides:
     - files:
           - "*.html"
