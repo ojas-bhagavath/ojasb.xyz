@@ -428,7 +428,7 @@ html {
         }
         main {
             margin-top: 70px;
-            width: calc(min(975px, 75%));
+            width: calc(min(975px, 100%));
             .drawing {
                 display: flex;
                 place-content: center;
