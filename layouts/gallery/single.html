@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+    <head>
+        {{ partial "head/meta.html" . }}
+        {{ partial "head/styles.html" . }}
+        {{ partial "head/lightmode.html" . }}
+        {{ partial "head/favicon.html" . }}
+        {{ partial "head/title.html" . }}
+    </head>
+
+    <body class="photoswipe">
+        <header>
+            {{ partial "header/photonav.html" . }}
+        </header>
+        <main>
+            <section class="drawing">
+                {{ with .PrevInSection }}
+                    <a href="{{ .RelPermalink }}" class="photoswipe-prev-page">
+                        {{ partialCached "svg/left.svg" . }}
+                    </a>
+                {{ end }}
+
+                {{ with .Resources.ByType "image" }}
+                    {{ range . }}
+                        <img src="{{ .RelPermalink }}" />
+                    {{ end }}
+                {{ end }}
+
+                {{ with .NextInSection }}
+                    <a href="{{ .RelPermalink }}" class="photoswipe-next-page">
+                        {{ partialCached "svg/right.svg" . }}
+                    </a>
+                {{ end }}
+            </section>
+            {{ .Content }}
+        </main>
+    </body>
+</html>

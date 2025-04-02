@@ -1,21 +1,4 @@
 ---
-main:
-    - name: Math
-      pageRef: "/math"
-      weight: 1
-      title: Mathematics
-    - name: Art
-      pageRef: "/art"
-      weight: 2
-      title: My Sketches
-    - name: Discourse
-      pageRef: "/discourse"
-      weight: 3
-      title: Articles
-    - name: Vitae
-      pageRef: "/vitae"
-      weight: 4
-      title: Curriculum Vitae
 contact:
     - name: "email"
       title: "Email"

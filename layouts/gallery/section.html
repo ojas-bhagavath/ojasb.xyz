@@ -1,0 +1,14 @@
+{{ define "main" }}
+    {{ .Content }}
+    <div class="gallery">
+        {{ range .Pages.ByWeight.Reverse }}
+            {{ $thumbnail := index (.Resources.ByType "image") 0 }}
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+                <img
+                    src="{{ $thumbnail.RelPermalink }}"
+                    alt="{{ .Description }}"
+                />
+            </a>
+        {{ end }}
+    </div>
+{{ end }}

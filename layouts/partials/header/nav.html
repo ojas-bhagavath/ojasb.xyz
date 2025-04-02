@@ -7,30 +7,12 @@
         </a>
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32px"
-                viewBox="0 -960 960 960"
-                width="32px"
-            >
-                <path
-                    d="M140-254.62v-59.99h680v59.99H140ZM140-450v-60h680v60H140Zm0-195.39v-59.99h680v59.99H140Z"
-                />
-            </svg>
+            {{ partialCached "svg/menu.svg" . }}
         </label>
         <label id="overlay" for="sidebar-active"> </label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="32px"
-                    viewBox="0 -960 960 960"
-                    width="32px"
-                >
-                    <path
-                        d="M256-213.85 213.85-256l224-224-224-224L256-746.15l224 224 224-224L746.15-704l-224 224 224 224L704-213.85l-224-224-224 224Z"
-                    />
-                </svg>
+                {{ partialCached "svg/close.svg" . }}
             </label>
             {{ $page := . }}
             {{ range .Site.Menus.main }}

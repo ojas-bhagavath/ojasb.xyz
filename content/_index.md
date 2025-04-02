@@ -1,6 +1,6 @@
 ---
-date: 2025-01-17T16:52:40+05:30
-title: Ojas Bhagavath
+date: "2025-01-17T16:52:40+05:30"
+title: "Ojas Bhagavath"
 draft: false
 ---
 

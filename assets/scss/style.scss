@@ -29,10 +29,11 @@ html {
                 position: fixed;
                 top: 0;
                 left: 0;
+                align-items: center;
                 background-color: var(--primary-base);
-                padding: 10px 0 0 0;
+                padding: 10px 0 10px 0;
                 width: 100%;
-                height: 65px;
+                height: 70px;
                 .navbox {
                     display: flex;
                     align-items: center;
@@ -61,6 +62,7 @@ html {
                         }
                     }
                     svg {
+                        width: 32px;
                         fill: var(--text-color);
                     }
                     .open-sidebar-button {
@@ -76,6 +78,7 @@ html {
                         .close-sidebar-button {
                             display: none;
                             svg {
+                                width: 32px;
                                 fill: var(--text-color);
                             }
                         }
@@ -134,7 +137,7 @@ html {
         main {
             flex-grow: 1;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 70px;
             width: calc(min(975px, 90%));
             font-size: 18px;
             a {
@@ -154,11 +157,12 @@ html {
             }
             blockquote {
                 display: flex;
+                position: relative;
                 justify-content: center;
                 align-items: center;
-                margin: 0;
                 div {
                     flex: 1;
+                    margin: 20px 0 20px 0;
                     font-style: italic;
                     cite {
                         float: right;
@@ -173,20 +177,38 @@ html {
                     }
                 }
                 &::before {
-                    align-self: start;
+                    position: absolute;
+                    top: -10px;
+                    left: -30px;
                     margin-right: 2rem;
                     content: open-quote;
                     color: var(--secondary-base);
                     font-weight: bold;
-                    font-size: 50px;
+                    font-size: 60px;
                 }
                 &::after {
-                    align-self: end;
+                    position: absolute;
+                    right: -30px;
+                    bottom: -30px;
                     margin-left: 2rem;
                     content: close-quote;
                     color: var(--secondary-base);
                     font-weight: bold;
-                    font-size: 50px;
+                    font-size: 60px;
+                }
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                place-content: center;
+                gap: 1em;
+                margin-top: 50px;
+                a {
+                    text-decoration: none;
+                    img {
+                        max-width: 90vw;
+                        max-height: 300px;
+                    }
                 }
             }
         }
@@ -375,6 +397,62 @@ html {
                         margin: 0;
                         padding: 0 0 0 5px;
                     }
+                }
+            }
+        }
+    }
+    .photoswipe {
+        .photonav {
+            display: flex;
+            align-content: center;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 15px;
+            padding: 0 5vw 0 5vw;
+            width: 100%;
+            height: 70px;
+            p {
+                place-content: center;
+                margin-right: auto;
+                border-radius: 5px;
+                background-color: var(--primary-accent);
+                padding: 0.25rem 1rem 0.25rem 1rem;
+                color: var(--primary-base);
+            }
+            a {
+                svg {
+                    width: 32px;
+                    fill: var(--text-color);
+                }
+            }
+        }
+        main {
+            margin-top: 70px;
+            width: calc(min(975px, 75%));
+            .drawing {
+                display: flex;
+                place-content: center;
+                .photoswipe-prev-page {
+                    position: fixed;
+                    top: 50%;
+                    left: 0;
+                    svg {
+                        fill: var(--text-color);
+                        width: 64px;
+                    }
+                }
+                .photoswipe-next-page {
+                    position: fixed;
+                    top: 50%;
+                    right: 0;
+                    svg {
+                        fill: var(--text-color);
+                        width: 64px;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    max-height: calc(100vh - 70px);
                 }
             }
         }

@@ -1,0 +1,21 @@
+<nav class="photonav">
+    {{ $section := .CurrentSection.Pages.ByWeight.Reverse }}
+    {{ $current := . }}
+    {{ $index := 0 }}
+
+    {{ range $i, $page := $section }}
+        {{ if eq $page $current }}
+            {{ $index = add $i 1 }}
+        {{ end }}
+    {{ end }}
+    {{ $length := .CurrentSection.Pages.ByWeight.Len }}
+    <p>{{ $index }} / {{ $length }}</p>
+    {{ range .Resources.ByType "image" }}
+        <a href="{{ .RelPermalink }}" download>
+            {{ partialCached "svg/download.svg" . }}
+        </a>
+    {{ end }}
+    {{ with .Parent }}
+        <a href="{{ .RelPermalink }}">{{ partialCached "svg/close.svg" . }}</a>
+    {{ end }}
+</nav>
