@@ -22,7 +22,7 @@
 
                 {{ with .Resources.ByType "image" }}
                     {{ range . }}
-                        <img src="{{ .RelPermalink }}" />
+                        <img loading="lazy" src="{{ .RelPermalink }}" />
                     {{ end }}
                 {{ end }}
 
