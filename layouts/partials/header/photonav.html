@@ -10,7 +10,8 @@
     {{ end }}
     {{ $length := .CurrentSection.Pages.ByWeight.Len }}
     <p>{{ $index }} / {{ $length }}</p>
-    {{ range .Resources.ByType "image" }}
+    {{ $image := index (.Resources.ByType "image") 0 }}
+    {{ with $image }}
         <a href="{{ .RelPermalink }}" download>
             {{ partialCached "svg/download.svg" . }}
         </a>
