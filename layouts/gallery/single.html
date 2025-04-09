@@ -10,7 +10,7 @@
 
     <body class="photoswipe">
         <header>
-            {{ partial "header/photonav.html" . }}
+            {{ partialCached "header/photonav.html" . }}
         </header>
         <main>
             <section class="drawing">
@@ -34,5 +34,6 @@
             </section>
             {{ .Content }}
         </main>
+        <footer>{{ partialCached "footer/footer.html" . }}</footer>
     </body>
 </html>

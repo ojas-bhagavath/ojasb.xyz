@@ -3,6 +3,7 @@
     <div class="gallery">
         {{ range .Pages.ByWeight.Reverse }}
             {{ $thumbnail := index (.Resources.ByType "image") 0 }}
+            {{ $thumbnail := $thumbnail.Resize "x300" }}
             <a href="{{ .RelPermalink }}" title="{{ .Title }}">
                 <img
                     src="{{ $thumbnail.RelPermalink }}"
