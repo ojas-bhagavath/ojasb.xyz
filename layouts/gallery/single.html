@@ -16,7 +16,7 @@
             <section class="drawing">
                 {{ with .PrevInSection }}
                     <a href="{{ .RelPermalink }}" class="photoswipe-prev-page">
-                        {{ partialCached "svg/left.svg" . }}
+                        {{ partial "svg/left.svg" . }}
                     </a>
                 {{ end }}
 
@@ -28,12 +28,12 @@
 
                 {{ with .NextInSection }}
                     <a href="{{ .RelPermalink }}" class="photoswipe-next-page">
-                        {{ partialCached "svg/right.svg" . }}
+                        {{ partial "svg/right.svg" . }}
                     </a>
                 {{ end }}
             </section>
             {{ .Content }}
         </main>
-        <footer>{{ partialCached "footer/footer.html" . }}</footer>
+        <footer>{{ partial "footer/footer.html" . }}</footer>
     </body>
 </html>

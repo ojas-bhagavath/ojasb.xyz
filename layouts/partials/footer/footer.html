@@ -11,7 +11,7 @@
                         title="{{ .Title }}"
                         data-username="{{ .Params.username }}"
                     >
-                        {{ partialCached (print .Pre) . }}
+                        {{ partial (print .Pre) . }}
                     </a>
                 </div>
             {{ end }}
@@ -29,7 +29,7 @@
                         title="{{ .Title }}"
                         data-username="{{ .Params.username }}"
                     >
-                        {{ partialCached (print .Pre) . }}
+                        {{ partial (print .Pre) . }}
                     </a>
                 </div>
             {{ end }}
@@ -39,7 +39,7 @@
 <section class="copyright">
     Built with
     <a class="hugo" target="_blank" href="https://gohugo.io/">
-        {{ partialCached "logos/hugo.svg" . }}
+        {{ partial "logos/hugo.svg" . }}
     </a>
     <a
         class="license"
@@ -47,6 +47,6 @@
         href="https://www.gnu.org/licenses/gpl-3.0.txt"
     >
         <span>&copy;</span> {{ now.Format "2006" }}
-        {{ partialCached "logos/ojasb.svg" . }}
+        {{ partial "logos/ojasb.svg" . }}
     </a>
 </section>

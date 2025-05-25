@@ -73,6 +73,14 @@ connect:
           - username: "Ojas-Bhagavath"
           - color: "#00CCBB"
       weight: 6
+    - name: "instagram"
+      title: "Instagram"
+      url: "https://www.instagram.com/ojas.bhagavath/"
+      pre: "logos/instagram.svg"
+      params:
+          - username: "ojas.bhagavath"
+          - color: "#FF0069"
+      weight: 7
     - name: "monkeytype"
       title: "monkeytype"
       url: "https://monkeytype.com/profile/ojas-bhagavath"
@@ -80,7 +88,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#E2B714"
-      weight: 7
+      weight: 8
     - name: "pinterest"
       title: "Pinterest"
       url: "https://pin.it/4i6Q7SAod"
@@ -88,4 +96,4 @@ connect:
       params:
           - username: "obhagavath"
           - color: "#BD081C"
-      weight: 8
+      weight: 9

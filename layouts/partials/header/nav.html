@@ -2,17 +2,17 @@
     <div class="navbox">
         <a href="/" class="home-link">
             <div class="logobox">
-                {{ partialCached "logos/ojasb.svg" . }}
+                {{ partial "logos/ojasb.svg" . }}
             </div>
         </a>
         <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
-            {{ partialCached "svg/menu.svg" . }}
+            {{ partial "svg/menu.svg" . }}
         </label>
         <label id="overlay" for="sidebar-active"> </label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                {{ partialCached "svg/close.svg" . }}
+                {{ partial "svg/close.svg" . }}
             </label>
             {{ $page := . }}
             {{ range .Site.Menus.main }}
@@ -35,8 +35,8 @@
                 {{ end }}
             {{ end }}
             <button id="theme-switch">
-                {{ partialCached "svg/lightmode.svg" . }}
-                {{ partialCached "svg/darkmode.svg" . }}
+                {{ partial "svg/lightmode.svg" . }}
+                {{ partial "svg/darkmode.svg" . }}
             </button>
         </div>
     </div>

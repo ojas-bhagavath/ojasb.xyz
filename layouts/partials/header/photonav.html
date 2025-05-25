@@ -13,10 +13,10 @@
     {{ $image := index (.Resources.ByType "image") 0 }}
     {{ with $image }}
         <a href="{{ .RelPermalink }}" download>
-            {{ partialCached "svg/download.svg" . }}
+            {{ partial "svg/download.svg" . }}
         </a>
     {{ end }}
     {{ with .Parent }}
-        <a href="{{ .RelPermalink }}">{{ partialCached "svg/close.svg" . }}</a>
+        <a href="{{ .RelPermalink }}">{{ partial "svg/close.svg" . }}</a>
     {{ end }}
 </nav>
