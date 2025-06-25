@@ -49,6 +49,14 @@ connect:
           - username: "ojas-bhagavath"
           - color: "#1E5397"
       weight: 3
+    - name: "letterboxd"
+      title: "Letterboxd"
+      url: "https://letterboxd.com/ojas_bhagavath/films"
+      pre: "logos/letterboxd.svg"
+      params:
+          - username: "ojas_bhagavath"
+          - color: "#202830"
+      weight: 4
     # - name: "leetcode"
     #   title: "LeetCode"
     #   url: "https://leetcode.com/u/ojas-bhagavath/"
@@ -56,7 +64,7 @@ connect:
     #   params:
     #       - username: "ojas-bhagavath"
     #       - color: "#FFA116"
-    #   weight: 4
+    #   weight: 5
     # - name: "codeforces"
     #   title: "CodeForces"
     #   url: "https://codeforces.com/profile/ojasgb"
@@ -64,7 +72,7 @@ connect:
     #   params:
     #       - username: "ojasgb"
     #       - color: "#1F8ACB"
-    #   weight: 5
+    #   weight: 6
     - name: "researchgate"
       title: "ResearchGate"
       url: "https://www.researchgate.net/profile/Ojas-Bhagavath"
@@ -72,7 +80,7 @@ connect:
       params:
           - username: "Ojas-Bhagavath"
           - color: "#00CCBB"
-      weight: 6
+      weight: 7
     - name: "instagram"
       title: "Instagram"
       url: "https://www.instagram.com/ojas.bhagavath/"
@@ -80,7 +88,7 @@ connect:
       params:
           - username: "ojas.bhagavath"
           - color: "#FF0069"
-      weight: 7
+      weight: 8
     - name: "monkeytype"
       title: "monkeytype"
       url: "https://monkeytype.com/profile/ojas-bhagavath"
@@ -88,7 +96,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#E2B714"
-      weight: 8
+      weight: 9
     - name: "pinterest"
       title: "Pinterest"
       url: "https://pin.it/4i6Q7SAod"
@@ -96,4 +104,4 @@ connect:
       params:
           - username: "obhagavath"
           - color: "#BD081C"
-      weight: 9
+      weight: 10
