@@ -1,0 +1,12 @@
+{{ $level := .Level }}
+{{ $anchor := anchorize .Text }}
+<h{{ $level }} id="{{ $anchor }}" class="
+  group relative
+  {{ if eq $level 1 }}text-[2rem] font-bold mt-10 border-b-1 pb-1.5 border-dotted rounded-xs mb-4 float-right w-full{{ end }}
+  {{ if eq $level 2 }}text-[1.75rem] font-bold mt-10 mb-3 border-b-1 pb-0.75 border-dotted rounded-xs{{ end }}
+  {{ if eq $level 3 }}text-[1.5rem] font-semibold mt-4 {{ end }}
+  {{ if ge $level 4 }}text-[1.25rem] font-semibold mt-4 mb-1 list-disc{{ end }}
+">
+  <a href="#{{ $anchor }}" class="absolute -left-6 opacity-0 group-hover:opacity-100 transition-opacity">#</a>
+  {{ .Text | safeHTML }}
+</h{{ $level }}>

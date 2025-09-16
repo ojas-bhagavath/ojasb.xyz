@@ -1,6 +1,5 @@
----
 goldmark:
-  parser:
-    attribute:
-      block: true
-      title: true
+    parser:
+        attribute:
+            block: true
+            title: true

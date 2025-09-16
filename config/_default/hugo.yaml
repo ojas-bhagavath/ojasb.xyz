@@ -1,9 +1,8 @@
----
 baseURL: https://ojasb.xyz/
 defaultContentLanguage: en
 languageCode: en-us
 pluralizeListTitles: false
-timeZone: Asia/Kolkata
+timeZone: America/Chicago
 title: Ojas Bhagavath
 enableRobotsTXT: true
 disableKinds:

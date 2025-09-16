@@ -1,0 +1,14 @@
+<blockquote
+    class="before:text-overlay after:-right- after:text-overlay relative mt-[30px] mb-[30px] box-border flex items-center justify-center before:absolute before:-top-[30px] before:left-[10px] before:mr-[2rem] before:inline-block before:text-[60px] before:font-bold before:content-[open-quote] after:absolute after:right-0 after:-bottom-[20px] after:ml-[1rem] after:inline-block after:text-6xl after:font-bold after:content-[close-quote]">
+    <div class="mt-[20px] mb-[20px] flex-1 px-8 italic">
+        {{ .Text }}
+        <cite
+            class="float-end mt-[20px] not-italic before:border-0 before:p-0 before:content-['\2014']">
+            {{ with .Attributes }}
+                <a href="{{ .link }}" target="_blank" class="underline">
+                    {{ .quotee | safeHTML }}
+                </a>
+            {{ end }}
+        </cite>
+    </div>
+</blockquote>

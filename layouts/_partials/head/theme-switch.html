@@ -1,0 +1,2 @@
+{{ $themeSwitch := resources.Get "scripts/theme-switch.js" | js.Build }}
+<script src="{{ $themeSwitch.RelPermalink }}" defer></script>

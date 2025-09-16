@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {{ partial "head/meta.html" . }}
+        {{ partial "head/styles.html" . }}
+        {{ partial "head/favicon.html" . }}
+        {{ partial "head/theme-switch.html" . }}
+        {{ partial "head/title.html" . }}
+    </head>
+    <body
+        class="bg-base dark:bg-base text-text dark:text-text flex flex-col justify-center font-serif text-lg">
+        <header>
+            {{ partial "header/nav.html" . }}
+        </header>
+        <main
+            class="m-auto mt-[70px] min-h-screen w-85/100 grow-1 md:max-w-[975px]">
+            {{ block "main" . }}
+            {{ end }}
+        </main>
+        {{ partial "footer/footer.html" . }}
+    </body>
+</html>
