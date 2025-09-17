@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Apply saved preference
 	if (localStorage.theme === 'dark') {
-		root.classList.add('dark');
+		root.classList.remove('light');
 	} else {
-		root.classList.remove('dark');
+		root.classList.add('light');
 	}
 
 	// Toggle on click
 	btn.addEventListener('click', () => {
-		if (root.classList.contains('dark')) {
-			root.classList.remove('dark');
-			localStorage.theme = 'light';
-		} else {
-			root.classList.add('dark');
+		if (root.classList.contains('light')) {
+			root.classList.remove('light');
 			localStorage.theme = 'dark';
+		} else {
+			root.classList.add('light');
+			localStorage.theme = 'light';
 		}
 	});
 });
