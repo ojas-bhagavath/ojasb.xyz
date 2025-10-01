@@ -72,6 +72,6 @@ A three-day-long symposium that hosts leading researchers from across the world,
 
 # Skills
 ### Technical:
-- Programming Languages: Python, Lua, Lean, Javascript.
+- Programming: Python, Lua, Lean, Javascript.
 - Markup: Typst, LaTeX, HTML, Markdown.
 - Other: Comfortable with Git version control, UNIX-like workflow, and Shell scripting.
