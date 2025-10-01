@@ -9,14 +9,16 @@
     </head>
     <body
         class="bg-base text-text flex flex-col justify-center font-serif text-lg">
-        <header>
+        <header class="sticky top-0 z-20">
             {{ partial "header/nav.html" . }}
         </header>
-        <main
-            class="m-auto mt-[70px] min-h-screen w-85/100 grow-1 md:max-w-[975px]">
+        <main class="m-auto min-h-screen w-85/100 grow-1 py-8 md:max-w-[975px]">
             {{ block "main" . }}
             {{ end }}
         </main>
-        {{ partial "footer/footer.html" . }}
+        <footer>
+            {{ partial "footer/content.html" . }}
+            {{ partial "footer/copyright.html" . }}
+        </footer>
     </body>
 </html>

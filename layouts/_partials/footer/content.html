@@ -1,0 +1,55 @@
+<section
+    class="border-t-red border-b-red flex w-full flex-col border-t-1 border-dotted pr-[40px] pb-[30px] pl-[40px] md:flex-row">
+    <div class="m-[10px] grow-1 basis-full">
+        <h3 class="mt-[20px] mb-[20px] text-xl font-bold">
+            Got something to say? I'm all ears:
+        </h3>
+        <div class="flex flex-row flex-wrap items-center gap-[20px]">
+            {{ range .Site.Menus.contact }}
+                <div
+                    class="group relative flex cursor-pointer flex-col items-center gap-[10px]">
+                    <span
+                        class="group-hover:ease=[cubic-bezier(0.42, 0, 0.44, 1.68)] absolute m-[10px] h-[42px] cursor-text rounded-[50vh] bg-[{{ .Params.color }}] text-[0px] font-semibold whitespace-nowrap opacity-0 transition-[font-size] transition-all duration-300 ease-[cubic-bezier(0.42,0,0.44,1.68)] select-text group-hover:translate-y-[-60px] group-hover:pr-[8px] group-hover:pl-[8px] group-hover:text-lg group-hover:leading-[42px] group-hover:opacity-100"
+                        >{{ .Params.username }}</span
+                    >
+                    <a
+                        target="_blank"
+                        href="{{ .URL }}"
+                        title="{{ .Title }}"
+                        data-username="{{ .Params.username }}"
+                        class="group-hover:fill-text bg-text before:content-[' '] flex h-[48px] w-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
+                        <div class="h-[32px] w-[32px]">
+                            {{ partial (print .Pre) . }}
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="m-[10px] grow-1 basis-full">
+        <h3 class="mt-[20px] mb-[20px] text-xl font-bold">
+            Curious about what I'm up to? Find me here:
+        </h3>
+        <div class="flex flex-row flex-wrap items-center gap-[20px]">
+            {{ range .Site.Menus.connect }}
+                <div
+                    class="group relative flex cursor-pointer flex-col items-center gap-[10px]">
+                    <span
+                        class="group-hover:ease=[cubic-bezier(0.42, 0, 0.44, 1.68)] absolute m-[10px] h-[42px] cursor-text rounded-[50vh] bg-[{{ .Params.color }}] text-[0px] font-semibold whitespace-nowrap opacity-0 transition-[font-size] transition-all duration-300 ease-[cubic-bezier(0.42,0,0.44,1.68)] select-text group-hover:translate-y-[-60px] group-hover:pr-[8px] group-hover:pl-[8px] group-hover:text-lg group-hover:leading-[42px] group-hover:opacity-100"
+                        >{{ .Params.username }}</span
+                    >
+                    <a
+                        target="_blank"
+                        href="{{ .URL }}"
+                        title="{{ .Title }}"
+                        data-username="{{ .Params.username }}"
+                        class="group-hover:fill-text bg-text before:content-[' '] flex h-[48px] w-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
+                        <div class="h-[32px] w-[32px]">
+                            {{ partial (print .Pre) . }}
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

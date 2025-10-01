@@ -6,6 +6,6 @@
     {{ if or (strings.HasPrefix .Destination "http") (strings.HasPrefix .Destination "https") }}
         target="_blank"
     {{ end }}
-    class="text-blue underline">
-    {{ .Text | safeHTML }}
+    class="text-mauve underline">
+    {{- .Text| safeHTML -}}
 </a>

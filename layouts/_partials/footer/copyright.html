@@ -1,0 +1,19 @@
+<section
+    class="border-t-red flex items-center justify-center border-t-[1px] border-dotted px-[10px] py-[5px] text-center text-[16px]">
+    Built with
+    <a
+        class="mr-auto ml-[5px] h-[18px]"
+        target="_blank"
+        href="https://gohugo.io/">
+        {{ partial "logos/hugo.svg" . }}
+    </a>
+    <a
+        class="flex flex-row items-center whitespace-nowrap"
+        target="_blank"
+        href="https://github.com/ojas-bhagavath/ojasb.xyz/blob/main/LICENSE">
+        <span class="rotate-180 pl-[5px]">&copy;</span> {{ now.Format "2006" }}
+        <div class="ml-[3px] h-[18px] w-[20px]">
+            {{ partial "logos/ojasb.svg" . }}
+        </div>
+    </a>
+</section>

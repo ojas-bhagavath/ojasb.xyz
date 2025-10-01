@@ -22,7 +22,7 @@ I am a first-year PhD student at the Department of Mathematics, University of Ok
 ### BSc in Physical Sciences (2019 - 2022)
 [JSS College of Arts, Commerce, and Science](https://www.jsscacs.edu.in/), Karnataka, India.
 
-# Experience
+# Research and Work Experience
 
 ### Graduate Teaching Assistant (2025 - Present)
 Graduate Teaching Assistant at the Department of Mathematics, University of Oklahoma.  
@@ -34,4 +34,44 @@ Tutor at [Math Center](https://www.ou.edu/cas/mathcenter)  at the University of 
 ### Junior Research Fellow (2024 - 2025)
 I was working as a Junior Research Fellow on a research project in Algebraic Geometry at the [Department of Mathematics](http://math.iitgn.ac.in/), [IIT Gandhinagar](https://iitgn.ac.in/). The project was concerned with the intersection theory in algebraic geometry, supervised by [Prof. Tanya Srivastava](https://mathface.com/).
 
+### Math Expert (2020 - 2022)
+Worked as a freelance math expert at the ed-tech company [Photomath](https://en.wikipedia.org/wiki/Photomath). I have written step-by-step solutions for over a thousand problems on the platform, covering topics such as Algebra, Geometry, Statistics, and Calculus. 
 
+# Scholastic Achievements
+### [CSIR NET/JRF Mathematics](https://en.wikipedia.org/wiki/National_Eligibility_Test) (2024 & 2023)
+- All India Rank of 77 (99.56 percentile) in the JRF list in CSIR NET Mathematics Dec 2024.
+- All India Rank of 63 (98.97 percentile) in the JRF list in CSIR NET Mathematics Dec 2023.
+- All India Rank of 31 (99.92 percentile) in the LS list in CSIR NET Mathematics Jun 2023.
+
+### [GATE Mathematics](https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering) (2024 & 2023)
+- All India Rank of 138 (98.97 percentile) in GATE Mathematics 2024.
+- All India Rank of 328 (97.37 percentile) in GATE Mathematics 2023. 
+
+### [NBHM Scholarship](https://www.imsc.res.in/~nbhm/) (2023)
+- Selected for the grant of the NBHM Doctoral Scholarship 2023. (not availed)
+- Selected for the grant of the NBHM Master’s Scholarship 2023. (availed) 
+
+### [IIT JAM Mathematics](https://en.wikipedia.org/wiki/Joint_Admission_Test_for_Masters) (2022)
+- All India Rank of 455 (96.42 percentile) in GATE Mathematics 2024.
+
+# Events Attended
+### [Lean for the Curious Mathematician](https://www.icts.res.in/discussion-meeting/LCMaths), ICTS Bangalore, India, Spring 2025
+A three-day-long discussion meeting on Lean theorem prover and formalisation of mathematics using Lean with experts in Lean and formalisation from around the world.
+
+### [Lie Groups and Representation Theory Workshop](https://www.atmschools.org/school/2024/NCMW/lgrt), IISER Berhampur, India, Winter 2024
+A nine-day-long workshop hosting expert mathematicians from across the counrty, with discussions and lectures on Representation Theory of Lie Groups and other related topics.
+
+### Seminar Series on Invariant Theory, IIT Gandhinagar, India, Fall 2024
+A semister-long seminar series by various professors delving into algebraic and geometric aspects of invariant theory.
+
+### [Annual Foundation School (AFS) II](https://www.atmschools.org/school/2024/AFS-II/afs-ii-bhopal/speakers-and-syllabus), IISER Bhopal, India, Summer 2024
+A month-long workshop designed to get graduate students familiar with basic topics required during their higher studies and research.
+
+### [Frontier Symposium in Mathematics](https://conference.iisertvm.ac.in/fsmath2023/), IISER TVM, India, Winter 2023
+A three-day-long symposium that hosts leading researchers from across the world, where they discuss about the cutting-edge mathematical research.
+
+# Skills
+### Technical:
+- Programming Languages: Python, Lua, Lean, Javascript.
+- Markup: Typst, LaTeX, HTML, Markdown.
+- Other: Comfortable with Git version control, UNIX-like workflow, and Shell scripting.
