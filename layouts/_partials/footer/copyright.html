@@ -1,36 +1,37 @@
 <section
-    class="border-t-red flex items-center justify-center border-t-[1px] border-dotted px-[10px] py-[5px] text-center text-[12px]">
-    <span class="mr-auto flex h-[14px] items-center">
+    class="border-t-red flex w-full items-center justify-between border-t-[1px] border-dotted px-[10px] py-[0.4em] text-center text-[12px]">
+    <div class="flex h-[14px] items-center">
         Built with
         <a
-            class="ml-[5px] h-[14px] w-[14px]"
+            class="ml-[0.4em] h-[14px] w-[14px]"
             target="_blank"
             href="https://gohugo.io/">
             {{ partial "logos/hugo.svg" . }}
         </a>
         , crafted on
         <a
-            class="ml-[5px] h-[14px] w-[14px]"
+            class="ml-[0.4em] h-[14px] w-[14px]"
             target="_blank"
             href="https://neovim.io/">
             {{ partial "logos/neovim.svg" . }}
         </a>
         , hosted on
         <a
-            class="ml-[5px] h-[14px] w-[14px]"
+            class="ml-[0.4em] h-[14px] w-[14px]"
             target="_blank"
             href="https://pages.cloudflare.com/">
             {{ partial "logos/cloudflarepages.svg" . }}
         </a>
         .
-    </span>
-    <a
+    </div>
+    <div
         class="flex flex-row items-center whitespace-nowrap"
         target="_blank"
         href="https://github.com/ojas-bhagavath/ojasb.xyz/blob/main/LICENSE">
-        <span class="rotate-180 pl-[5px]">&copy;</span> {{ now.Format "2006" }}
-        <div class="ml-[3px] h-[14px] w-[20px]">
+        <span class="rotate-180 pl-[0.4em]">&copy;</span>
+        {{ now.Format "2006" }}
+        <div class="ml-[0.4em] h-[14px] w-[20px]">
             {{ partial "logos/ojasb.svg" . }}
         </div>
-    </a>
+    </div>
 </section>
