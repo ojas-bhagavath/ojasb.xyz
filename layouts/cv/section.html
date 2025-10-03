@@ -1,6 +1,9 @@
 {{ define "main" }}
+    <a
+        class="ml-auto flex size-[32px] items-center"
+        href="/docs/ojas_cv.pdf"
+        download="ojas_cv.pdf">
+        {{ partial "svg/download.svg" . }}
+    </a>
     {{ .Content }}
-    {{ range .Pages }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ end }}
 {{ end }}

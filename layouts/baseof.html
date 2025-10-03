@@ -8,11 +8,11 @@
         {{ partial "head/title.html" . }}
     </head>
     <body
-        class="bg-base text-text flex flex-col justify-center font-serif text-lg">
+        class="bg-base text-text flex min-h-screen flex-col justify-center font-serif text-lg">
         <header class="sticky top-0 z-20">
             {{ partial "header/nav.html" . }}
         </header>
-        <main class="m-auto min-h-screen w-85/100 grow-1 py-8 md:max-w-[975px]">
+        <main class="m-auto mb-auto w-85/100 flex-1 py-8 md:max-w-[975px]">
             {{ block "main" . }}
             {{ end }}
         </main>

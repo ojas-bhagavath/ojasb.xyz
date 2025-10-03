@@ -1,7 +1,7 @@
 <section
-    class="border-t-red border-b-red flex w-full flex-col border-t-1 border-dotted pr-[40px] pb-[30px] pl-[40px] md:flex-row">
+    class="border-t-red border-b-red flex w-full flex-col border-t-1 border-dotted px-[40px] py-[20px] md:flex-row">
     <div class="m-[10px] grow-1 basis-full">
-        <h3 class="mt-[20px] mb-[20px] text-xl font-bold">
+        <h3 class="mt-0 mb-[20px] text-xl font-bold">
             Got something to say? I'm all ears:
         </h3>
         <div class="flex flex-row flex-wrap items-center gap-[20px]">
@@ -17,8 +17,8 @@
                         href="{{ .URL }}"
                         title="{{ .Title }}"
                         data-username="{{ .Params.username }}"
-                        class="bg-text before:content-[' '] fill-base flex h-[48px] w-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] group-hover:fill-white before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
-                        <div class="h-[32px] w-[32px]">
+                        class="bg-text before:content-[' '] fill-base flex size-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] group-hover:fill-white before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
+                        <div class="size-[32px]">
                             {{ partial (print .Pre) . }}
                         </div>
                     </a>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="m-[10px] grow-1 basis-full">
-        <h3 class="mt-[20px] mb-[20px] text-xl font-bold">
+        <h3 class="mt-0 mb-[20px] text-xl font-bold">
             Curious about what I'm up to? Find me here:
         </h3>
         <div class="flex flex-row flex-wrap items-center gap-[20px]">
@@ -43,8 +43,8 @@
                         href="{{ .URL }}"
                         title="{{ .Title }}"
                         data-username="{{ .Params.username }}"
-                        class="bg-text before:content-[' '] fill-base flex h-[48px] w-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] group-hover:fill-white before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
-                        <div class="h-[32px] w-[32px]">
+                        class="bg-text before:content-[' '] fill-base flex size-[48px] shrink-0 flex-row items-center justify-center rounded-[24px] group-hover:bg-[{{ .Params.color }}] group-hover:fill-white before:absolute before:-top-[8px] before:h-[32px] before:w-[48px] before:opacity-0">
+                        <div class="size-[32px]">
                             {{ partial (print .Pre) . }}
                         </div>
                     </a>
