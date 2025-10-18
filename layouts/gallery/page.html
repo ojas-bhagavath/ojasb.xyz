@@ -1,3 +1,15 @@
+{{ define "photonav" }}
+    {{ partial "header/photonav.html" . }}
+{{ end }}
 {{ define "main" }}
-    {{ .Content }}
+    <section class="flex justify-center">
+        {{ with .Resources.ByType "image" }}
+            {{ range . }}
+                <img
+                    loading="lazy"
+                    src="{{ .RelPermalink }}"
+                    class="max-h-[85vh] max-w-full" />
+            {{ end }}
+        {{ end }}
+    </section>
 {{ end }}
