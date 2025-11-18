@@ -12,7 +12,8 @@
         <header class="sticky top-0 z-20">
             {{ partial "header/nav.html" . }}
         </header>
-        <main class="m-auto mb-auto w-85/100 flex-1 py-8 md:max-w-[975px]">
+        <main
+            class="m-auto mb-auto min-h-[calc(100vh-70px)] w-85/100 flex-1 py-8 md:max-w-[975px]">
             {{ block "main" . }}
             {{ end }}
         </main>
