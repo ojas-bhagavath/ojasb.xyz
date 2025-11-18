@@ -175,6 +175,7 @@
       "md:static",
       "md:w-[44px]",
       "md:w-auto",
+      "min-h-[calc(100vh-70px)]",
       "min-h-screen",
       "ml-[0.4em]",
       "ml-auto",
