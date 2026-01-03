@@ -3,7 +3,13 @@
         <div
             class="mx-auto w-full max-w-[250px] md:float-right md:mb-[25px] md:ml-[25px]">
             {{ with resources.Get "images/self.jpg" }}
-                <img class="rounded-md" src="{{ .RelPermalink }}" />
+                {{ with .Resize "800x webp q80" }}
+                    <img
+                        class="rounded-md"
+                        src="{{ .RelPermalink }}"
+                        alt="Profile Image"
+                        loading="lazy" />
+                {{ end }}
             {{ end }}
         </div>
         {{ .Content }}
