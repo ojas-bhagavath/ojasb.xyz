@@ -3,3 +3,4 @@ goldmark:
         attribute:
             block: true
             title: true
+        wrapStandAloneImageWithinParagraph: false
