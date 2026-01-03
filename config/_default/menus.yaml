@@ -51,7 +51,7 @@ connect:
       weight: 3
     - name: "letterboxd"
       title: "Letterboxd"
-      url: "https://letterboxd.com/ojas_bhagavath/films"
+      url: "https://letterboxd.com/ojas_bhagavath/"
       pre: "logos/letterboxd.svg"
       params:
           - username: "ojas_bhagavath"
