@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class="w-full">
         <div
-            class="mx-auto w-full max-w-[250px] md:float-right md:mb-[25px] md:ml-[25px]">
+            class="mx-auto w-full max-w-[200px] md:float-right md:mb-[25px] md:ml-[25px] md:max-w-[250px]">
             {{ with resources.Get "images/self.jpg" }}
                 {{ with .Resize "800x webp q80" }}
                     <img

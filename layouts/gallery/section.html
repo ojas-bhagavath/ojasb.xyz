@@ -3,7 +3,7 @@
     <div class="mt-10 flex flex-wrap justify-center gap-4">
         {{ range .Pages.ByWeight.Reverse }}
             {{ $thumbnail:=index (.Resources.ByType "image") 0 }}
-            {{ $thumbnail:=$thumbnail.Resize "x300" }}
+            {{ $thumbnail:=$thumbnail.Resize "x300 webp q80" }}
             <a href="{{ .RelPermalink }}" title="{{ .Title }}">
                 <img
                     src="{{ $thumbnail.RelPermalink }}"
