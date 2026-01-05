@@ -4,7 +4,7 @@ date: "2025-09-11T23:16:11-05:00"
 draft: false
 description: "The curriculum vitae of Ojas Bhagavath, a PhD student in Mathematics at University of Oklahoma."
 menu: "main"
-weight: 3
+weight: 10
 type: "cv"
 ---
 
