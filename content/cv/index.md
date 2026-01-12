@@ -1,11 +1,11 @@
 ---
-title: "CV"
 date: "2025-09-11T23:16:11-05:00"
+title: "CV"
 draft: false
 description: "The curriculum vitae of Ojas Bhagavath, a PhD student in Mathematics at University of Oklahoma."
+type: "cv"
 menu: "main"
 weight: 10
-type: "cv"
 ---
 
 ## Summary

@@ -1,12 +1,11 @@
 ---
 date: "2025-03-25T12:24:23+05:30"
-name: "Gallery"
 title: "Gallery"
 draft: false
 description: "A collection of sketches and paintings by Ojas Bhagavath."
+type: "gallery"
 menu: "main"
 weight: 2
-type: "gallery"
 ---
 
 # Gallery

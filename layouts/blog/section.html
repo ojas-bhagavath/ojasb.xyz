@@ -1,0 +1,8 @@
+{{ define "main" }}
+    {{ .Content }}
+    {{ range .Pages }}
+        <h2 class="text-mauve mt-10 mb-3 text-[1.5rem] font-bold">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </h2>
+    {{ end }}
+{{ end }}
