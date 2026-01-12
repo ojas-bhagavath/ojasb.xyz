@@ -49,6 +49,14 @@ connect:
           - username: "ojas-bhagavath"
           - color: "#1E5397"
       weight: 3
+    - name: "goodreads"
+      title: "Goodreads"
+      url: "https://goodreads.com/ojasb/"
+      pre: "logos/goodreads.svg"
+      params:
+          - username: "ojasb"
+          - color: "#1E1914"
+      weight: 4
     - name: "letterboxd"
       title: "Letterboxd"
       url: "https://letterboxd.com/ojas_bhagavath/"
@@ -56,31 +64,7 @@ connect:
       params:
           - username: "ojas_bhagavath"
           - color: "#202830"
-      weight: 4
-    # - name: "leetcode"
-    #   title: "LeetCode"
-    #   url: "https://leetcode.com/u/ojas-bhagavath/"
-    #   pre: "logos/leetcode.svg"
-    #   params:
-    #       - username: "ojas-bhagavath"
-    #       - color: "#FFA116"
-    #   weight: 5
-    # - name: "codeforces"
-    #   title: "CodeForces"
-    #   url: "https://codeforces.com/profile/ojasgb"
-    #   pre: "logos/codeforces.svg"
-    #   params:
-    #       - username: "ojasgb"
-    #       - color: "#1F8ACB"
-    #   weight: 6
-    - name: "researchgate"
-      title: "ResearchGate"
-      url: "https://www.researchgate.net/profile/Ojas-Bhagavath"
-      pre: "logos/researchgate.svg"
-      params:
-          - username: "Ojas-Bhagavath"
-          - color: "#00CCBB"
-      weight: 7
+      weight: 5
     - name: "instagram"
       title: "Instagram"
       url: "https://www.instagram.com/ojas.bhagavath/"
@@ -88,7 +72,7 @@ connect:
       params:
           - username: "ojas.bhagavath"
           - color: "#FF0069"
-      weight: 8
+      weight: 6
     - name: "monkeytype"
       title: "monkeytype"
       url: "https://monkeytype.com/profile/ojas-bhagavath"
@@ -96,7 +80,7 @@ connect:
       params:
           - username: "ojas-bhagavath"
           - color: "#E2B714"
-      weight: 9
+      weight: 7
     - name: "pinterest"
       title: "Pinterest"
       url: "https://pin.it/4i6Q7SAod"
@@ -104,4 +88,4 @@ connect:
       params:
           - username: "obhagavath"
           - color: "#BD081C"
-      weight: 10
+      weight: 8
