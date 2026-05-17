@@ -26,9 +26,9 @@ University of Mysore, Karnataka, India.
 ### Graduate Teaching Assistant (2025&ndash;present)
 Department of Mathematics, University of Oklahoma.
 - Graded quizzes and assignments for:
-  - Ordinary Differential Equations (2 sections), Fall 2025.
-  - Discrete Mathematics (2 sections), Spring 2026.
-  - Calculus IV (1 section), Spring 2026.
+    - Ordinary Differential Equations (2 sections), Fall 2025.
+    - Discrete Mathematics (2 sections), Spring 2026.
+    - Calculus IV (1 section), Spring 2026.
 
 ### Mathematics Tutor (2025&ndash;present)
 [Math Center](https://www.ou.edu/cas/mathcenter/), University of Oklahoma.
