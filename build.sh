@@ -26,7 +26,7 @@ main() {
     # Define tool versions
     DART_SASS_VERSION=1.99.0
     GO_VERSION=1.26.2
-    HUGO_VERSION=0.161.1
+    HUGO_VERSION=0.162.0
     NODE_VERSION=24.15.0
 
     # Set the build timezone
@@ -80,6 +80,10 @@ main() {
     if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
         git fetch --unshallow
     fi
+
+    # Install Node.js dependencies
+    echo "Installing Node.js dependencies..."
+    npm install
 
     # Build the site
     echo "Building the site..."
