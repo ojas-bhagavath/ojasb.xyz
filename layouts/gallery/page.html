@@ -5,10 +5,12 @@
     <section class="flex justify-center">
         {{ with .Resources.ByType "image" }}
             {{ range . }}
+                {{ $image := .Resize "2000x webp q85" }}
                 <img
                     loading="lazy"
-                    src="{{ .RelPermalink }}"
-                    class="max-h-[85vh] max-w-full" />
+                    src="{{ $image.RelPermalink }}"
+                    class="max-h-[85vh] max-w-full"
+                    alt="{{ $.Description }}" />
             {{ end }}
         {{ end }}
     </section>

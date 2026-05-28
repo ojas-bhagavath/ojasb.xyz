@@ -3,3 +3,7 @@
 <meta
     name="description"
     content="{{ .Description | default .Site.Params.description | safeHTML }}" />
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}

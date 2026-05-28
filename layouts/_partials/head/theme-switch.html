@@ -1,2 +1,5 @@
-{{ $themeSwitch := resources.Get "scripts/theme-switch.js" | js.Build }}
-<script src="{{ $themeSwitch.RelPermalink }}" defer></script>
+{{ $themeSwitch := resources.Get "scripts/theme-switch.js" | js.Build (dict "minify" true) | fingerprint }}
+<script
+    src="{{ $themeSwitch.RelPermalink }}"
+    integrity="{{ $themeSwitch.Data.Integrity }}"
+    defer></script>
